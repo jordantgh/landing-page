@@ -1,0 +1,1 @@
+Repo to work on The Odin Project's Landing Page project.
