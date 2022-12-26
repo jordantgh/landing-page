@@ -1,0 +1,25 @@
+body {
+    margin: auto;
+}
+
+.header, .hero, .footer {
+    background-color: #1f2937;
+    color: #f9faf8;
+    display: flex;
+}
+
+.hero {
+    align-items: center;
+    justify-content: center;
+}
+
+.quote {
+    background-color: #e5e7eb;
+}
+
+.main, .heroimg {
+    flex: 0 1 auto;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+}
