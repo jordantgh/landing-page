@@ -1,25 +1,150 @@
 body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.header, .hero, .footer {
+/* Section Styles */
+.hero, .footer {
     background-color: #1f2937;
     color: #f9faf8;
-    display: flex;
 }
 
-.hero {
-    align-items: center;
-    justify-content: center;
+.information {
+    background-color: #f9faf8;
+    color: #1f2937;
 }
 
 .quote {
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
     background-color: #e5e7eb;
+    color: #1f2937;
 }
 
-.main, .heroimg {
-    flex: 0 1 auto;
+/* Set container flex orientations */
+.rowcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.colcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Limit scales */
+
+.colcontainer > * {
+    width: 1024px;
+}
+
+.gridfig > img {
+    width: 90%;
+    border-radius: 4px;
+}
+
+#herobody {
+    height: 500px;
+}
+
+#heroimg {
+    width: 40%;
     border-radius: 5px;
-    width: 200px;
+}
+
+#infocentrediv {
+    align-items: center;
+}
+
+#infogroupdiv {
+    justify-content: center;
+}
+
+#randinfowrapper {
+    flex: 2 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#randinfowrapper > h2 {
+    margin: 0px;
+}
+
+#infocentrediv {
+    height: 500px;
+}
+
+#figdiv {
+    height: 300px;
+}
+
+#lowerinfo {
     height: 200px;
+}
+
+#herotext {
+    width: 45%;
+}
+
+#header {
+    height: 60px;
+}
+
+.quotetext {
+    height: 400px;
+}
+
+a {
+    color: #e5e7eb
+}
+
+.quoteplusattr > #attrib {
+    text-align: end;
+}
+
+
+#lowerinfo {
+    width: 1024px;
+}
+
+#bluewrapper {
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 10px;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+#herotext > button {
+    background-color: #3882f6;
+    border-color: #3882f6;
+    border-radius: 5px;
+    color:#f9faf8;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.actionbutton > button {
+    background-color: #3882f6;
+    border-color: #f9faf8;
+    border-radius: 5px;
+    color:#f9faf8;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
