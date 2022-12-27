@@ -7,50 +7,88 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css"/>
 </head>
-<body>
-    <div class="header">
-        <div class="logo">Header Logo</div>
-        <a href="link">header link one</a>
-        <a href="link">header link two</a>
-        <a href="link">header link three</a>
-    </div>
-    <div class="hero">
-        <div class="main">
-            <h2>This website is awesome</h2>
-            <p>This website has some subtext that goes here under the main title. It's a smaller font and the colour is lower contrast.</p>
-            <button type="button">Sign up</button>
+
+<body>    
+    <div class="hero colcontainer" id="hero">
+
+        <div class="header rowcontainer" id="header">
+            <div style="font-weight: bold; font-size: 24px;" class="logo">Header Logo</div>
+            <a href="link">header link one</a>
+            <a href="link">header link two</a>
+            <a href="link">header link three</a>
         </div>
-        <img class="heroimg" src="./images/coolimg.png">
-    </div>
-    <div class="information"></div>
-        <h2>Some random information.</h2>
-        <div class="imggird">
-            <img class="gridimg">
-            <figcaption>this is some subtext under an illustration or image</figcaption>
-            <img class="gridimg">
-            <figcaption>this is some subtext under an illustration or image</figcaption>
-            <img class="gridimg">
-            <figcaption>this is some subtext under an illustration or image</figcaption>
-            <img class="gridimg">
-            <figcaption>this is some subtext under an illustration or image</figcaption>
-        </div>
-    <div class="quote">
-        <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
-        <p> - Thor, God of Thunder</p>
-    </div>
-    <div class="information">
-        <div class="calltoaction">
-            <div class="actionmain">
-                <h3>Call to action! It's time!</h3>
-                <p>Sign up for our product by clicking that button right over there!</p>
+
+        <div class="rowcontainer" id="herobody">
+            <div class="textbutton" id="herotext">
+                <h2 style="font-size: 48px; font-weight: bolder;">This website is awesome</h2>
+                <p style="font-size: 18px; color: #e5e7eb">This website has some subtext that goes here under the main title. It's a smaller font and the colour is lower contrast.</p>
+                <button type="button" id="herobutton">Sign up</button>
             </div>
-            <div class="actionbutton">
-                <button type="button">Sign up</button>
+            <img id="heroimg" src="./images/grid_0.png">
+        </div>
+
+
+    </div>
+
+    <div class="information colcontainer" id="upperinfo">
+
+        <div class="rowcontainer" id="infocentrediv">
+            <div class="colcontainer"- id="infogroupdiv">
+                <div id="randinfowrapper">
+                    <h2 style="text-align: center;">Some random information.</h2>
+                </div>
+        
+                <div class="figgrid rowcontainer" id="figdiv">
+                    <div class="gridfig">
+                        <img class="gridimg" src="./images/b_r_0.png">
+                        <figcaption>this is some subtext under an illustration or image</figcaption>
+                    </div>
+                    <div class="gridfig">
+                        <img class="gridimg" src="./images/t_r_0.png">
+                        <figcaption>this is some subtext under an illustration or image</figcaption>
+                    </div>
+                    <div class="gridfig">
+                        <img class="gridimg" src="./images/b_l_0.png">
+                        <figcaption>this is some subtext under an illustration or image</figcaption>
+                    </div>
+                    <div class="gridfig">
+                        <img class="gridimg" src="./images/t_l_0.png">
+                        <figcaption>this is some subtext under an illustration or image</figcaption>
+                    </div>
             </div>
         </div>
+
+        </div>
     </div>
-    <div class="footer">
-        <p>Copyright (C) The Odin Project 2021</p>
+
+    <div class="quote colcontainer">
+        <div class="quotetext rowcontainer">
+            <div class="quoteplusattr colcontainer">
+                <p id="quotewords">This is an inspiring quote, or a testimonial from a customer.    Maybe  it's just filling up space, or maybe people will actually   read it. Who   knows? All I know is that it looks nice.</p>
+                <p style="font-weight: bold;" id="attrib"> - Thor, God of Thunder</p>
+            </div>
     </div>
+    </div>
+
+    <div class="information colcontainer">
+
+        <div class="calltoaction rowcontainer" id="lowerinfo">
+            <div class="rowcontainer" id="bluewrapper">
+                <div class="actionmain">
+                    <h3>Call to action! It's time!</h3>
+                    <p>Sign up for our product by clicking that button right over   there!</p>
+                </div>
+                <div class="actionbutton">
+                    <button type="button">Sign up</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="footer colcontainer">
+        <p style="text-align: center;">Copyright (C) The Odin Project 2021</p>
+    </div>
+
 </body>
 </html>
